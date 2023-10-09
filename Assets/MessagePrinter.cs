@@ -1,3 +1,4 @@
+
 using TMPro;
 using UnityEngine;
 
@@ -27,12 +28,14 @@ public class MessagePrinter : MonoBehaviour
         get
         {
             // TODO: ここにコードを書く
+            return _currentIndex + 1 < _message.Length;
         }
     }
 
     private void Start()
     {
         ShowMessage(_message);
+        _interval = _speed / _message.Length;
     }
 
     private void Update()
@@ -42,6 +45,7 @@ public class MessagePrinter : MonoBehaviour
         _elapsed += Time.deltaTime;
         if (_elapsed > _interval)
         {
+            float a= 0;
             _elapsed = 0;
             _currentIndex++;
             _textUi.text += _message[_currentIndex];
@@ -55,6 +59,9 @@ public class MessagePrinter : MonoBehaviour
     public void ShowMessage(string message)
     {
         // TODO: ここにコードを書く
+        _textUi.text = "";
+        _message = message;
+        _currentIndex = -1;
     }
 
     /// <summary>
@@ -63,5 +70,7 @@ public class MessagePrinter : MonoBehaviour
     public void Skip()
     {
         // TODO: ここにコードを書く
+        _textUi.text = _message;
+        _currentIndex = _message.Length - 1;
     }
 }
