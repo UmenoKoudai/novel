@@ -35,7 +35,6 @@ public class MessagePrinter : MonoBehaviour
     private void Start()
     {
         ShowMessage(_message);
-        _interval = _speed / _message.Length;
     }
 
     private void Update()
@@ -45,10 +44,10 @@ public class MessagePrinter : MonoBehaviour
         _elapsed += Time.deltaTime;
         if (_elapsed > _interval)
         {
-            float a= 0;
             _elapsed = 0;
             _currentIndex++;
             _textUi.text += _message[_currentIndex];
+
         }
     }
 
@@ -62,6 +61,7 @@ public class MessagePrinter : MonoBehaviour
         _textUi.text = "";
         _message = message;
         _currentIndex = -1;
+        _interval = _speed / _message.Length;
     }
 
     /// <summary>
