@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed630f59f84adf4fb71e47744f1e316, type: 3}
+  m_Name: Talk
+  m_EditorClassIdentifier: 
+  talkData:
+  - commands:
+    - rid: 5120902019148939264
+    - rid: 5120902019148939265
+  - commands:
+    - rid: 5120902019148939267
+  - commands:
+    - rid: 5120902019148939269
+  references:
+    version: 2
+    RefIds:
+    - rid: 5120902019148939264
+      type: {class: WindowOpenCommand, ns: , asm: Assembly-CSharp}
+    - rid: 5120902019148939265
+      type: {class: PrintCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _messageSpeed: 1
+        _message: "\u3053\u3093\u3070\u3093\u308F"
+    - rid: 5120902019148939267
+      type: {class: PrintCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _messageSpeed: 2
+        _message: "\u3055\u3088\u3046\u306A\u3089"
+    - rid: 5120902019148939269
+      type: {class: WindowCloseCommand, ns: , asm: Assembly-CSharp}
