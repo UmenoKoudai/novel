@@ -9,6 +9,6 @@ public class CharacterData
     public GameObject[] CharacterArray => _characterArray;
 
     [SerializeField]
-    private Transform[] _movePoint;
-    public Transform[] MovePoint => _movePoint;
+    private SpriteRenderer[] _faceArray;
+    public SpriteRenderer[] FaceArray => _faceArray;
 }

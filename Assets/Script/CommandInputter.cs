@@ -20,23 +20,18 @@ public class CommandInputter : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1") && isEndCoroutine)
             {
-                if (_index >= _data.Data.Count || _index < 0) continue;
+                if (_index >= _data.Data.Count || _index < 0) break;
                 isEndCoroutine = false;
                 var command = _data.Data[_index].Commands;
-                for (int i = 0; i < command.Count; i++)
+                for (int i = 0; i < command.Count;)
                 {
-                    if (command[i].IsConcurrent)
+                    while (command[i].IsConcurrent)
                     {
-                        while (command[i].IsConcurrent)
-                        {
-                            CommandInvoke.Invoke(command[i]);
-                            i++;
-                        }
+                        CommandInvoke.Invoke(command[i]).Forget();
+                        i++;
                     }
-                    else
-                    {
-                        await CommandInvoke.Invoke(command[i]);
-                    }
+                    await CommandInvoke.Invoke(command[i]);
+                    i++;
                 }
                 _index++;
                 isEndCoroutine = true;

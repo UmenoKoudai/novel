@@ -1,5 +1,4 @@
 using Cysharp.Threading.Tasks;
-using UnityEngine.UI;
 using UnityEngine;
 
 public class WindowFadeOutCommand : ICommand
@@ -16,11 +15,9 @@ public class WindowFadeOutCommand : ICommand
     public async UniTask Execute()
     {
         _gameInfo = GameInfo.Instance;
-        _gameInfo.MessageUI.Text.gameObject.SetActive(false);
         Debug.Log("WindowOutStart");
         await FadeOut();
         Debug.Log("WindowOutEnd");
-        _gameInfo.MessageUI.Window.gameObject.SetActive(false);
     }
 
     async UniTask FadeOut()

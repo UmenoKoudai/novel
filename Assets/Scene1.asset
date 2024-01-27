@@ -1,0 +1,230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aed630f59f84adf4fb71e47744f1e316, type: 3}
+  m_Name: Scene1
+  m_EditorClassIdentifier: 
+  talkData:
+  - commands:
+    - rid: 5120902292335493133
+    - rid: 5120902292335493134
+    - rid: 5120902292335493135
+    - rid: 5120902292335493136
+    - rid: 5120902336730890244
+    - rid: 5120902292335493137
+  - commands:
+    - rid: 5120902336318537730
+    - rid: 5120902336318537731
+    - rid: 5120902336318537732
+    - rid: 5120902336318537733
+    - rid: 5120902336318537734
+    - rid: 5120902336318537735
+    - rid: 5120902336318537736
+    - rid: 5120902336318537737
+  - commands:
+    - rid: 5120902292335493143
+    - rid: 5120902292335493144
+    - rid: 5120902292335493145
+    - rid: 5120902292335493148
+    - rid: 5120902292335493149
+    - rid: 5120902292335493146
+    - rid: 5120902292335493150
+    - rid: 5120902292335493151
+    - rid: 5120902336730890245
+    - rid: 5120902292335493152
+    - rid: 5120902336318537728
+  references:
+    version: 2
+    RefIds:
+    - rid: 5120902292335493133
+      type: {class: FadeInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 1
+        _changeValue: 0.01
+    - rid: 5120902292335493134
+      type: {class: CharacterInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _characterTarget: 0
+        _changeValue: 0.01
+    - rid: 5120902292335493135
+      type: {class: WindowFadeInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _changeValue: 0.01
+    - rid: 5120902292335493136
+      type: {class: PrintCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _messageSpeed: 1
+        _message: "\u3053\u3053\u306F\u30D0\u30F3\u30BF\u30F3\u30B2\u30FC\u30E0\u30A2\u30AB\u30C7\u30DF\u30FC"
+    - rid: 5120902292335493137
+      type: {class: MoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConCurrent: 0
+        _character: 0
+        _moveSpeed: 1
+        _interval: 0.1
+        _moveCommand:
+        - rid: 5120902292335493138
+        - rid: 5120902292335493139
+        - rid: 5120902292335493142
+        - rid: 5120902292335493140
+        - rid: 5120902292335493141
+    - rid: 5120902292335493138
+      type: {class: UpMoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDirection: {x: 0, y: 1, z: 0}
+        _moveSpeed: 0.1
+    - rid: 5120902292335493139
+      type: {class: DownMoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDirection: {x: 0, y: -1, z: 0}
+        _moveSpeed: 0.1
+    - rid: 5120902292335493140
+      type: {class: UpMoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDirection: {x: 0, y: 1, z: 0}
+        _moveSpeed: 0.1
+    - rid: 5120902292335493141
+      type: {class: DownMoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDirection: {x: 0, y: -1, z: 0}
+        _moveSpeed: 0.1
+    - rid: 5120902292335493142
+      type: {class: StayCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _stayTime: 0.3
+    - rid: 5120902292335493143
+      type: {class: CharacterOutCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 1
+        _characterTarget: 2
+        _changeValue: 0.01
+    - rid: 5120902292335493144
+      type: {class: WindowFadeOutCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 1
+        _changeValue: 0.01
+    - rid: 5120902292335493145
+      type: {class: FadeOutCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _changeValue: 0.01
+    - rid: 5120902292335493146
+      type: {class: FadeInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _changeValue: 0.01
+    - rid: 5120902292335493148
+      type: {class: CharacterInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _characterTarget: 1
+        _changeValue: 0.01
+    - rid: 5120902292335493149
+      type: {class: SpriteSwapCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 1
+        _changeSprite: {fileID: 21300000, guid: faa401947b0d228438df2bfc06206f19,
+          type: 3}
+    - rid: 5120902292335493150
+      type: {class: WindowFadeInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _changeValue: 0.01
+    - rid: 5120902292335493151
+      type: {class: PrintCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _messageSpeed: 1
+        _message: "\u7686\u304A\u3044\u3067\u3088\u30D0\u30F3\u30BF\u30F3\u30B2\u30FC\u30E0\u30A2\u30AB\u30C7\u30DF\u30FC"
+    - rid: 5120902292335493152
+      type: {class: MoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConCurrent: 0
+        _character: 1
+        _moveSpeed: 1
+        _interval: 0.5
+        _moveCommand:
+        - rid: 5120902292335493153
+        - rid: 5120902292335493154
+    - rid: 5120902292335493153
+      type: {class: LeftMoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDirection: {x: -10, y: 0, z: 0}
+        _moveSpeed: 1
+    - rid: 5120902292335493154
+      type: {class: RightMoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDirection: {x: 10, y: 0, z: 0}
+        _moveSpeed: 1
+    - rid: 5120902336318537728
+      type: {class: WindowFadeOutCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _changeValue: 0.01
+    - rid: 5120902336318537730
+      type: {class: CharacterOutCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 1
+        _characterTarget: 0
+        _changeValue: 0.01
+    - rid: 5120902336318537731
+      type: {class: FadeOutCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 1
+        _changeValue: 0.01
+    - rid: 5120902336318537732
+      type: {class: WindowFadeOutCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _changeValue: 0.01
+    - rid: 5120902336318537733
+      type: {class: CharacterInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _characterTarget: 2
+        _changeValue: 0.01
+    - rid: 5120902336318537734
+      type: {class: SpriteSwapCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 1
+        _changeSprite: {fileID: 21300000, guid: 77673e9dc4ae880418f35f0da1ae475d,
+          type: 3}
+    - rid: 5120902336318537735
+      type: {class: FadeInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _changeValue: 0.01
+    - rid: 5120902336318537736
+      type: {class: WindowFadeInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _changeValue: 0.01
+    - rid: 5120902336318537737
+      type: {class: PrintCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _messageSpeed: 1
+        _message: "\u30B2\u30FC\u30E0\u5236\u4F5C\u3092\u5B66\u3076\u70BA\u306E\u5B66\u3073\u820E"
+    - rid: 5120902336730890244
+      type: {class: CharacterFaceChangeCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _character: 0
+        _sprite: {fileID: 21300000, guid: c160479228541db4db76c80792ea64e6, type: 3}
+    - rid: 5120902336730890245
+      type: {class: CharacterFaceChangeCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _character: 1
+        _sprite: {fileID: 21300000, guid: 8f60d029bcb5a7f4193c611ff6c1407e, type: 3}

@@ -16,6 +16,8 @@ MonoBehaviour:
   - commands:
     - rid: 5120902203715616797
     - rid: 5120902203715616798
+    - rid: 5120902286066057216
+    - rid: 5120902286066057217
     - rid: 5120902203715616799
   - commands:
     - rid: 5120902204300197891
@@ -81,3 +83,27 @@ MonoBehaviour:
       data:
         _isConcurrent: 0
         _changeValue: 0.01
+    - rid: 5120902286066057216
+      type: {class: CharacterInCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConcurrent: 0
+        _characterTarget: 0
+        _changeValue: 0.01
+    - rid: 5120902286066057217
+      type: {class: MoveCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _isConCurrent: 0
+        _character: 0
+        _moveSpeed: 1
+        _interval: 0.5
+        _moveCommand:
+        - rid: 5120902286066057218
+        - rid: 5120902286066057219
+    - rid: 5120902286066057218
+      type: {class: MoveDirectionCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDirection: {x: 10, y: 0, z: 0}
+    - rid: 5120902286066057219
+      type: {class: MoveDirectionCommand, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDirection: {x: -10, y: 0, z: 0}

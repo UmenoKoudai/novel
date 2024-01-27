@@ -1,6 +1,5 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class WindowFadeInCommand : ICommand
 {
@@ -16,7 +15,6 @@ public class WindowFadeInCommand : ICommand
     public async UniTask Execute()
     {
         _gameInfo = GameInfo.Instance;
-        _gameInfo.MessageUI.Window.gameObject.SetActive(true);
         Debug.Log("windowInStart");
         await FadeIn();
         Debug.Log("windowInEnd");

@@ -1,6 +1,7 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public interface IMoveCommand
 {
-    public abstract void MoveObject(GameObject obj);
+    public abstract UniTask MoveObject(GameObject obj, float interval, float speed);
 }
